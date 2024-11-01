@@ -116,20 +116,55 @@
 // } else if (c > a && c > b) {
 //   console.log(c);
 // }
-// 11.
-let a = 8;
-let b = 10;
-let c = 4;
-let d = 20;
-let x;
-if (a > b && a > c && a > d && a) {
-  if (b > c && a) console.log(a, b, c);
-  if (c > b) console.log(a, c, b);
-  
-} else if (b > a && b > c) {
-  if (a > c) console.log(b, a, c);
-  if (c > a) console.log(b, c, a);
-} else if (c > a && c > b) {
-  if (a > b) console.log(c, a, b);
-  if (b > a) console.log(c, b, a);
-}
+// // 11.
+// let a = 80;
+// let b = 10;
+// let c = 40;
+// let d = 20;
+// if (a > b && a > c && a > d) {
+//   if (b > c && b > d) console.log(b);
+//   if (c > b && c > d) console.log(c);
+//   if (d > b && d > c) console.log(d);
+// } else if (b > a && b > c && b > d) {
+//   if (a > c && a > d) console.log(a);
+//   if (c > a && c > d) console.log(c);
+//   if (d > c && d > a) console.log(d);
+// } else if (c > a && c > b && c > d) {
+//   if (a > b && a > d) console.log(a);
+//   if (b > a && b > d) console.log(b);
+//   if (d > a && d > b) console.log(d);
+// } else if (d > a && d > b && d > c) {
+//   if (a > b && a > c) console.log(a);
+//   if (b > a && b > c) console.log(b);
+//   if (c > a && c > b) console.log(c);
+// }
+// // 12a.
+// let number = 0;
+// let sum = 0;
+// while (number < 1000) {
+//   if (number % 3 == 0) {
+//     sum = sum + number;
+//   }
+//   number += 1;
+// }
+// console.log(sum);
+// // 12b.
+// let a = 3;
+// let sum = 0;
+// let n = 333;
+// let d = 3;
+// sum = (n / 2) * (2 * a + (n - 1) * d);
+// console.log(sum);
+// 18.
+let a = 170;
+let b = 180;
+let c = 160;
+let d = 175;
+let e = 174;
+let f = 173;
+let g = 171;
+let h = 172;
+let i = 168;
+let j = 179;
+let avgHeight = 0;
+avgHeight = (a + b + c + d + e + f + g + h + i + j) / 2;

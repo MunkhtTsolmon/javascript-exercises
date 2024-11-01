@@ -111,27 +111,63 @@
 // }
 // console.log(hariu);
 // bonus exercise
-let a = 0;
-let count = 0;
-while (a < 100) {
-  a = a + 10;
-  if (a < 50) {
-    console.log("Checkpoint! ", a);
-  } else if (a == 50) {
-    console.log("Half way there! ");
-  } else if (a < 100) {
-    console.log("Checkpoint! ", a);
-  } else {
-    console.log("You made it!");
-    console.log("All, done!");
-  }
-}
-// fibo
-let firstNumber = 0;
-let nextNumber = 1;
-let numberOrder = 0;
+// let a = 0;
+// let count = 0;
+// while (a < 100) {
+//   a = a + 10;
+//   if (a < 50) {
+//     console.log("Checkpoint! ", a);
+//   } else if (a == 50) {
+//     console.log("Half way there! ");
+//   } else if (a < 100) {
+//     console.log("Checkpoint! ", a);
+//   } else {
+//     console.log("You made it!");
+//     console.log("All, done!");
+//   }
+// }
+// // fibo
+// let firstNumber = 0;
+// let nextNumber = 1;
+// let numberOrder = 0;
 
-while (nextNumber < 1000) {
-  console.log(nextNumber);
-  nextNumber + nextNumber;
+// while (nextNumber < 1000) {
+//   console.log(nextNumber);
+//   nextNumber + nextNumber;
+// }
+// coffee shop punch card
+let cupNumber = 0;
+while (cupNumber <= 10) {
+  if (cupNumber == 10) {
+    console.log("Баяр хүргэе! Та үнэгүй кофе авлаа!");
+  } else if (cupNumber % 3 == 0) {
+    console.log("Танд үнэгүй бялуу бэлэглжу байна");
+  } else {
+    console.log("Та " + cupNumber + " дахь кофегоо худалдан авлаа");
+  }
+  cupNumber = cupNumber + 1;
 }
+
+// // summing the digits of a number
+// let givenNunber = 1956;
+// let digits = 0;
+
+// while (givenNunber > 0) {
+//   digits += givenNunber % 10;
+//   givenNunber = Math.floor(givenNunber / 10);
+// }
+// console.log(digits);
+
+// Largest digit
+let givenNunber = 1956;
+let digits = 0;
+let nextDigit = 0;
+while (givenNunber > 0) {
+  nextDigit = givenNunber % 10;
+
+  if (digits < nextDigit) {
+    digits = nextDigit;
+  }
+  givenNunber = Math.floor(givenNunber / 10);
+}
+console.log(digits);
