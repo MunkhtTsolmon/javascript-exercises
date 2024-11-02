@@ -26,19 +26,35 @@
 // }
 // console.log(sum);
 
-// 27.
-let positiveNumber = 1238;
-let remainder = 0;
-let evenDigits = 1;
-let multiple = 1;
-let oddDigits = 0;
-while(positiveNumber > 0) {
-    remainder = positiveNumber % 10;
-    if(remainder % 2 == 0) {
-        evenDigits *= remainder;
+// 26.
+let n =5434;
+let counter = 0;
+while (n > 1) {
+    if (n % 2 !== 0) {
+        n = n * 3 + 1;
+        n = n / 2;
+        console.log(n);
     } else {
-        oddDigits += remainder
+        n = n / 2;
+        console.log(n);
     }
-   positiveNumber = Math.floor(positiveNumber / 10);
-}
-console.log(evenDigits - oddDigits);
+    counter += 1;
+};
+console.log(counter);
+
+// // 27.
+// let positiveNumber = 1238;
+// let remainder = 0;
+// let evenDigits = 1;
+// let multiple = 1;
+// let oddDigits = 0;
+// while(positiveNumber > 0) {
+//     remainder = positiveNumber % 10;
+//     if(remainder % 2 == 0) {
+//         evenDigits *= remainder;
+//     } else {
+//         oddDigits += remainder
+//     }
+//    positiveNumber = Math.floor(positiveNumber / 10);
+// }
+// console.log(evenDigits - oddDigits);
