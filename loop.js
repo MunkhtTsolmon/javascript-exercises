@@ -158,16 +158,25 @@ while (cupNumber <= 10) {
 // }
 // console.log(digits);
 
-// Largest digit
-let givenNunber = 1956;
-let digits = 0;
-let nextDigit = 0;
-while (givenNunber > 0) {
-  nextDigit = givenNunber % 10;
+// // Largest digit
+// let givenNunber = 1956;
+// let digits = 0;
+// let nextDigit = 0;
+// while (givenNunber > 0) {
+//   nextDigit = givenNunber % 10;
 
-  if (digits < nextDigit) {
-    digits = nextDigit;
-  }
-  givenNunber = Math.floor(givenNunber / 10);
+//   if (digits < nextDigit) {
+//     digits = nextDigit;
+//   }
+//   givenNunber = Math.floor(givenNunber / 10);
+// }
+// console.log(digits);
+// traingle
+let a = 9;
+let pattern = "";
+while (a > 0) {
+  a = a - 1;
+
+  pattern = pattern + " *";
+  console.log(pattern);
 }
-console.log(digits);
